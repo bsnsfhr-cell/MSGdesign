@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSG Design | Company Profile & Sablon Kaos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .bg-dark-accent {
+            background-color: #0a0a0a;
+        }
+
+        .text-red-primary {
+            color: #e11d48;
+        }
+
+        .bg-red-primary {
+            background-color: #e11d48;
+        }
+
+        .card-glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .service-hover:hover {
+            border-color: #e11d48;
+            background: rgba(225, 29, 72, 0.05);
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-dark-accent text-slate-200">
+
+    <!-- Navigasi -->
+    <nav class="fixed w-full z-50 bg-black/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="text-2xl font-extrabold tracking-tighter text-white">
+                MSG<span class="text-red-primary">DESIGN</span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-semibold text-sm uppercase tracking-widest">
+                <a href="#home" class="hover:text-red-primary transition">Beranda</a>
+                <a href="#about" class="hover:text-red-primary transition">Tentang</a>
+                <a href="#services" class="hover:text-red-primary transition">Layanan</a>
+                <a href="#portfolio" class="hover:text-red-primary transition">Karya</a>
+                <a href="#contact" class="hover:text-red-primary transition">Kontak</a>
+            </div>
+            <div class="hidden md:block">
+                <a href="https://wa.me/6281328983105" class="bg-red-primary text-white px-6 py-2.5 rounded-full font-bold hover:bg-red-700 transition shadow-lg shadow-red-900/20">WhatsApp</a>
+            </div>
+            <button class="md:hidden text-2xl text-white" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Menu Mobile -->
+    <div id="mobileMenu" class="fixed inset-0 bg-black z-[60] flex flex-col items-center justify-center space-y-8 text-2xl font-bold hidden">
+        <button class="absolute top-6 right-6 text-3xl text-white" id="closeBtn">&times;</button>
+        <a href="#home" class="mobile-link text-white">Beranda</a>
+        <a href="#about" class="mobile-link text-white">Tentang</a>
+        <a href="#services" class="mobile-link text-white">Layanan</a>
+        <a href="#portfolio" class="mobile-link text-white">Karya</a>
+        <a href="#contact" class="mobile-link text-red-primary">Kontak</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
+            <img src="https://images.unsplash.com/photo-1562906232-6184ce816621?auto=format&fit=crop&q=80&w=1920" class="w-full h-full object-cover" alt="Bengkel Desain">
+        </div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="max-w-3xl space-y-8">
+                <h1 class="text-6xl md:text-8xl font-extrabold text-white leading-tight">
+                    Kreativitas <br><span class="text-red-primary">Tanpa Batas.</span>
+                </h1>
+                <p class="text-xl text-slate-400 leading-relaxed">
+                    Solusi branding terpadu. Dari desain identitas visual hingga produksi sablon kaos berkualitas tinggi dengan nomor WhatsApp +62 813-2898-3105.
+                </p>
+                <div class="flex flex-wrap gap-5">
+                    <a href="#services" class="px-10 py-4 bg-red-primary text-white rounded-lg font-bold hover:bg-red-700 transition shadow-xl">Layanan Kami</a>
+                    <a href="#contact" class="px-10 py-4 border border-white/20 text-white rounded-lg font-bold hover:bg-white hover:text-black transition">Hubungi Kami</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="about" class="py-32 bg-black px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1621839673705-6617adf9e890?auto=format&fit=crop&q=80&w=800" class="rounded-2xl grayscale hover:grayscale-0 transition duration-700 shadow-2xl" alt="Tim MSG Design">
+                <div class="absolute -bottom-6 -right-6 bg-red-primary p-6 rounded-xl text-white font-bold">Est. 2024</div>
+            </div>
+            <div class="space-y-6">
+                <h2 class="text-4xl font-bold text-white uppercase tracking-tighter">Mengenal <span class="text-red-primary">MSG Design</span></h2>
+                <p class="text-lg text-slate-400 leading-relaxed">
+                    Kami adalah studio kreatif yang fokus pada kualitas visual dan kepuasan pelanggan. Dengan pengalaman bertahun-tahun, kami siap membantu brand Anda tampil lebih profesional dan menonjol.
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-4 card-glass rounded-lg text-center">
+                        <div class="text-red-primary text-3xl font-bold mb-1">100%</div>
+                        <div class="text-xs text-slate-500 uppercase">Kualitas Premium</div>
+                    </div>
+                    <div class="p-4 card-glass rounded-lg text-center">
+                        <div class="text-red-primary text-3xl font-bold mb-1">Fast</div>
+                        <div class="text-xs text-slate-500 uppercase">Pengerjaan Cepat</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan -->
+    <section id="services" class="py-32 bg-dark-accent px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-5xl font-black text-white uppercase italic">Layanan <span class="text-red-primary">Utama</span></h2>
+                <div class="w-24 h-1.5 bg-red-primary mx-auto mt-4"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 card-glass rounded-3xl border-t-4 border-red-primary service-hover">
+                    <i class="fas fa-tshirt text-red-primary text-4xl mb-6"></i>
+                    <h3 class="text-2xl font-bold text-white mb-4">Sablon Kaos</h3>
+                    <p class="text-slate-400 text-sm">Produksi sablon manual dan digital (DTF) dengan tinta berkualitas untuk hasil maksimal.</p>
+                </div>
+                <div class="p-8 card-glass rounded-3xl border-t-4 border-red-primary service-hover">
+                    <i class="fas fa-pen-nib text-red-primary text-4xl mb-6"></i>
+                    <h3 class="text-2xl font-bold text-white mb-4">Desain Grafis</h3>
+                    <p class="text-slate-400 text-sm">Pembuatan logo, brosur, banner, dan identitas visual brand secara profesional.</p>
+                </div>
+                <div class="p-8 card-glass rounded-3xl border-t-4 border-red-primary service-hover">
+                    <i class="fas fa-cut text-red-primary text-4xl mb-6"></i>
+                    <h3 class="text-2xl font-bold text-white mb-4">Konveksi</h3>
+                    <p class="text-slate-400 text-sm">Penyedia jasa jahit kaos, hoodie, dan kemeja seragam dengan standar distro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact" class="py-32 bg-black px-6">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20">
+            <div>
+                <h2 class="text-5xl font-black text-white uppercase mb-6">Hubungi <span class="text-red-primary">Kami</span></h2>
+                <p class="text-slate-400 mb-12">Siap untuk memulai proyek Anda? Hubungi kami melalui formulir di samping atau langsung via WhatsApp.</p>
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-4">
+                        <i class="fab fa-whatsapp text-red-primary text-2xl"></i>
+                        <span class="text-white">+62 813-2898-3105</span>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <i class="fas fa-envelope text-red-primary text-2xl"></i>
+                        <span class="text-white">msgdesign.official@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-glass p-8 rounded-2xl">
+                <form id="waForm" class="space-y-4">
+                    <input type="text" id="waName" placeholder="Nama Anda" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-red-primary">
+                    <select id="waService" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-slate-400 focus:outline-none focus:border-red-primary">
+                        <option value="">Pilih Layanan</option>
+                        <option value="Sablon Kaos">Sablon Kaos</option>
+                        <option value="Desain Grafis">Desain Grafis</option>
+                        <option value="Konveksi">Konveksi</option>
+                    </select>
+                    <textarea id="waMessage" rows="4" placeholder="Pesan Anda" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-red-primary"></textarea>
+                    <button type="button" onclick="sendToWA()" class="w-full py-4 bg-red-primary text-white rounded-xl font-bold hover:bg-red-700 transition">Kirim ke WhatsApp</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 bg-black border-t border-white/5 text-center text-slate-600 text-sm">
+        <p>&copy; 2024 MSG Design Official. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script>
+        function sendToWA() {
+            const name = document.getElementById('waName').value;
+            const service = document.getElementById('waService').value;
+            const message = document.getElementById('waMessage').value;
+            const phone = "6281328983105";
+
+            if(!name || !service || !message) {
+                alert("Mohon isi semua field!");
+                return;
+            }
+
+            const text = `Halo MSG Design!%0A%0A*Nama:* ${name}%0A*Layanan:* ${service}%0A*Pesan:* ${message}`;
+            window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
+        }
+
+        const menuBtn = document.getElementById('menuBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.onclick = () => mobileMenu.classList.remove('hidden');
+        closeBtn.onclick = () => mobileMenu.classList.add('hidden');
+        mobileLinks.forEach(l => l.onclick = () => mobileMenu.classList.add('hidden'));
+    </script>
+</body>
+</html>
+
+
